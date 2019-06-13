@@ -1,0 +1,14 @@
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\bin\Debug\netcoreapp2.1\ProcessesAPI.deps.json
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\bin\Debug\netcoreapp2.1\ProcessesAPI.runtimeconfig.json
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\bin\Debug\netcoreapp2.1\ProcessesAPI.runtimeconfig.dev.json
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\bin\Debug\netcoreapp2.1\ProcessesAPI.dll
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\bin\Debug\netcoreapp2.1\ProcessesAPI.pdb
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.csprojAssemblyReference.cache
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.csproj.CoreCompileInputs.cache
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.RazorAssemblyInfo.cache
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.RazorAssemblyInfo.cs
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.AssemblyInfoInputs.cache
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.AssemblyInfo.cs
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.RazorTargetAssemblyInfo.cache
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.dll
+C:\Users\luisa\source\repos\ProcessesAPI\ProcessesAPI\obj\Debug\netcoreapp2.1\ProcessesAPI.pdb
