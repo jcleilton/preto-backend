@@ -8,23 +8,21 @@ namespace ProcessesAPI.Model
 {
     public class StartupBD
     {
-        public StartupBD(MachineContext context)
+        public StartupBD(FaixaContext context)
         {
             context.Database.EnsureCreated();
             
-            if (context.Machine.Any())
+            if (context.FaixaObject.Any())
             {
                 return;
             }
-            var processes = new MachineModel[]
-            {
-              new MachineModel{ machineName = "sdfgfgd"},
-              new MachineModel{ machineName = "dfgs"},
-            };
-            foreach (MachineModel p in processes)
-            {
-                context.Machine.Add(p);
-            }
+            
+            var faixa1 = new Faixa();
+            faixa1.id = 1234567;
+            faixa1.cor = "branca";
+
+            context.FaixaObject.Add(faixa1);
+            
             context.SaveChanges();
         }
     }
