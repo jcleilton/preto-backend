@@ -10,36 +10,36 @@ using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Controllers
 {
-    [Route("api/categoria")]
+    [Route("api/equipe")]
     [ApiController]
     public class EquipeController : ControllerBase
     {
-        private readonly CategoriaContext _context;
+        private readonly EquipeContext _context;
 
-        public CategoriaController(CategoriaContext context)
+        public EquipeController(EquipeContext context)
         {
             _context = context;
         }
 
-        // GET: api/categoria
+        // GET: api/equipe
         [HttpGet]
-        public IEnumerable<Categoria> GetCategoria()
+        public IEnumerable<Equipe> GetEquipe()
         {
-            return _context.CategoriaObject;
+            return _context.EquipeObject;
         }
 
-        // GET: api/categoria/5
+        // GET: api/equipe/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCategoria([FromRoute] int id)
+        public async Task<IActionResult> GetEquipe([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var categoria = await _context.CategoriaObject.FindAsync(id);
+            var equipe = await _context.EquipeObject.FindAsync(id);
 
-            if (categoria == null)
+            if (equipe == null)
             {
                 return NotFound();
             }
@@ -47,21 +47,21 @@ namespace ProcessesAPI.Controllers
             return Ok(categoria);
         }
 
-        // PUT: api/categoria/5
+        // PUT: api/equipe/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategoria([FromRoute] int id, [FromBody] Categoria categoria)
+        public async Task<IActionResult> PutEquipe([FromRoute] int id, [FromBody] Equipe equipe)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != categoria.id)
+            if (id != equipe.id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(categoria).State = EntityState.Modified;
+            _context.Entry(equipe).State = EntityState.Modified;
 
             try
             {
@@ -69,7 +69,7 @@ namespace ProcessesAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CategoriaExiste(id))
+                if (!EquipeExiste(id))
                 {
                     return NotFound();
                 }
@@ -82,45 +82,45 @@ namespace ProcessesAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/categoria
+        // POST: api/equipe
         [HttpPost]
-        public async Task<IActionResult> PostCategoria([FromBody] Categoria categoria)
+        public async Task<IActionResult> PostEquipe([FromBody] Equipe equipe)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.CategoriaObject.Add(categoria);
+            _context.EquipeObject.Add(equipe);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCategoria", new { id = categoria.id }, categoria);
+            return CreatedAtAction("GetEquipe", new { id = equipe.id }, equipe);
         }
 
-        // DELETE: api/categoria/5
+        // DELETE: api/equipe/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategoria([FromRoute] int id)
+        public async Task<IActionResult> DeleteEquipe([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var categoria = await _context.CategoriaObject.FindAsync(id);
-            if (categoria == null)
+            var equipe = await _context.EquipeObject.FindAsync(id);
+            if (equipe == null)
             {
                 return NotFound();
             }
 
-            _context.CategoriaObject.Remove(categoria);
+            _context.EquipeObject.Remove(equipe);
             await _context.SaveChangesAsync();
 
-            return Ok(categoria);
+            return Ok(equipe);
         }
 
-        private bool CategoriaExiste(int id)
+        private bool EquipeExiste(int id)
         {
-            return _context.CategoriaObject.Any(e => e.id == id);
+            return _context.EquipeObject.Any(e => e.id == id);
         }
     }
 }
