@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProcessesAPI.Model;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Controllers
 {
@@ -23,7 +22,7 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/faixa
         [HttpGet]
-        public IEnumerable<Faixa> GetFaixa()
+        public IEnumerable<Faixa> GetFaixas()
         {
             return _context.FaixaObject;
         }

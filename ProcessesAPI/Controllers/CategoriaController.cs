@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProcessesAPI.Model;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Controllers
 {
@@ -23,7 +22,7 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/categoria
         [HttpGet]
-        public IEnumerable<Categoria> GetCategoria()
+        public IEnumerable<Categoria> GetCategorias()
         {
             return _context.CategoriaObject;
         }

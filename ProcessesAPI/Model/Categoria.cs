@@ -1,8 +1,9 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProcessesAPI.Model
 {
-    class Categoria
+    public class Categoria
     {
         public int id { get; set; }
         public string nome { get; set; }
@@ -12,7 +13,7 @@ namespace ProcessesAPI.Model
         public int idade_final { get; set; }
         public float peso_inicial { get; set; }
         public float peso_final { get; set; }
-        public bool is_gui { get; set; }
+        public int is_gui { get; set; }
        
 
         public Categoria()

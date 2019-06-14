@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Model
 {
@@ -10,6 +9,6 @@ namespace ProcessesAPI.Model
 
         }
 
-        public DbSet<Categoria> CategoriaObject { get; set; }
+        public DbSet<ProcessesAPI.Model.Categoria> CategoriaObject { get; set; }
     }
 }

@@ -1,0 +1,88 @@
+CREATE TABLE `heroku_83afc1619ebaf7c`.`categoriaobject` (
+  `id` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `id_faixa` INT NULL,
+  `tempo_luta_em_minuto` INT NULL,
+  `idade_inicial` INT NULL,
+  `idade_final` INT NULL,
+  `peso_inicial` FLOAT NULL,
+  `peso_final` FLOAT NULL,
+  `is_gui` INT NULL,
+  PRIMARY KEY (`id`));
+
+  CREATE TABLE `heroku_83afc1619ebaf7c`.`faixaobject` (
+  `id` INT NOT NULL,
+  `cor` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+
+  CREATE TABLE `heroku_83afc1619ebaf7c`.`competidorobject` (
+  `id` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `sobre_nome` VARCHAR(45) NULL,
+  `data_nascimento` DATETIME NULL,
+  `data_cadastro` DATETIME NULL,
+  `peso` FLOAT NULL,
+  `idade` INT NULL,
+  `id_categoria` INT NULL,
+  `id_equipe` INT NULL,
+  `id_evento_ultimo` INT NULL,
+  `senha` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `id_faixa` INT NULL,
+  `whatsapp` VARCHAR(45) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `uf` VARCHAR(45) NULL,
+  `pais` VARCHAR(45) NULL,
+  `logradouro` VARCHAR(45) NULL,
+  `numero_casa` VARCHAR(45) NULL,
+  `observacao` VARCHAR(200) NULL,
+  `cep` VARCHAR(45) NULL,
+  `is_admin` INT NULL,
+  PRIMARY KEY (`id`));
+
+
+  CREATE TABLE `heroku_83afc1619ebaf7c`.`equipeobject` (
+  `id` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `data_cadastro` DATETIME NULL,
+  `cidade` VARCHAR(45) NULL,
+  `uf` VARCHAR(45) NULL,
+  `pais` VARCHAR(45) NULL,
+  `logradouro` VARCHAR(45) NULL,
+  `numero_casa` VARCHAR(45) NULL,
+  `observacao` VARCHAR(200) NULL,
+  `cep` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+
+
+  CREATE TABLE `heroku_83afc1619ebaf7c`.`eventoobject` (
+  `id` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `descricao` VARCHAR(200) NULL,
+  `data` DATETIME NULL,
+  `is_aberto` INT NULL,
+  `logradouro` VARCHAR(45) NULL,
+  `numero_casa` VARCHAR(45) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `uf` VARCHAR(45) NULL,
+  `pais` VARCHAR(45) NULL,
+  `cep` VARCHAR(45) NULL,
+  `observacao` VARCHAR(200) NULL,
+  PRIMARY KEY (`id`));
+
+
+  #to post in database:
+
+  {
+	 "id" : 18,
+     "nome" : "pré-mirim masculino pesadíssimo",
+     "id_faixa" : 2,
+     "tempo_luta_em_minuto" : 1,
+     "idade_inicial" : 4,
+     "idade_final" : 5,
+     "peso_inicial" : 26.1,
+     "peso_final" : 29.3,
+     "is_gui" : 1
+}

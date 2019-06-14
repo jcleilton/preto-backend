@@ -2,7 +2,7 @@ using System;
 
 namespace ProcessesAPI.Model
 {
-    class Equipe
+    public class Equipe
     {
         public int id { get; set; }
         public string nome { get; set; }

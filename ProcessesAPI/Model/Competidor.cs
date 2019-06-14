@@ -2,7 +2,7 @@ using System;
 
 namespace ProcessesAPI.Model
 {
-    class Competidor
+    public class Competidor
     {
         public int id { get; set; }
         public string nome { get; set; }
@@ -25,9 +25,8 @@ namespace ProcessesAPI.Model
         public string numero_casa { get; set; }
         public string observacao { get; set; }
         public string cep { get; set; }
-        public bool Is_admin { get => is_admin; set => is_admin = value; }
 
-        private bool is_admin = false;
+        public int is_admin { get; set; }
 
         public Competidor()
         {

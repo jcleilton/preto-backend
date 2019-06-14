@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProcessesAPI.Model;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Controllers
 {
@@ -23,7 +22,7 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/equipe
         [HttpGet]
-        public IEnumerable<Equipe> GetEquipe()
+        public IEnumerable<Equipe> GetEquipes()
         {
             return _context.EquipeObject;
         }
@@ -44,7 +43,7 @@ namespace ProcessesAPI.Controllers
                 return NotFound();
             }
 
-            return Ok(categoria);
+            return Ok(equipe);
         }
 
         // PUT: api/equipe/5

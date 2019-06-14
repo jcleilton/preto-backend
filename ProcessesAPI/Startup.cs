@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProcessesAPI.Model;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI
 {
@@ -19,9 +18,15 @@ namespace ProcessesAPI
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
-            services.AddDbContext<MachineContext>(options =>
+            services.AddDbContext<CategoriaContext>(options =>
                 options.UseMySql(connection));
-            services.AddDbContext<ProcessContext>(options =>
+            services.AddDbContext<CompetidorContext>(options =>
+                options.UseMySql(connection));
+            services.AddDbContext<EquipeContext>(options =>
+                options.UseMySql(connection));
+            services.AddDbContext<EventoContext>(options =>
+                options.UseMySql(connection));
+            services.AddDbContext<FaixaContext>(options =>
                 options.UseMySql(connection));
             services.AddMvc();
         }

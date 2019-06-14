@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Model
 {

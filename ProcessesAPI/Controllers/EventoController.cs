@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProcessesAPI.Model;
-using ProcessesAPI.Models;
 
 namespace ProcessesAPI.Controllers
 {
@@ -23,7 +22,7 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/evento
         [HttpGet]
-        public IEnumerable<Categoria> GetEvento()
+        public IEnumerable<Evento> GetEventos()
         {
             return _context.EventoObject;
         }

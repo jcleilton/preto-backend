@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProcessesAPI.Models;
+using ProcessesAPI.Model;
 
 namespace ProcessesAPI.Controllers
 {
@@ -20,7 +20,7 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/competidor
         [HttpGet]
-        public IEnumerable<Competidor> GetCompetidor()
+        public IEnumerable<Competidor> GetCompetidores()
         {
             return _context.CompetidorObject;
         }
