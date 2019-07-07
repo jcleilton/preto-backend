@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProcessesAPI.Model;
@@ -15,6 +13,8 @@ namespace ProcessesAPI.Controllers
     {
         private readonly FaixaContext _context;
 
+        private string Faixas = "[{\"id\":1111,\"cor\":\"branca\"},{\"id\":2,\"cor\":\"cinza\"},{\"id\":3,\"cor\":\"amarela\"},{\"id\":4,\"cor\":\"laranja\"},{\"id\":5,\"cor\":\"verde\"},{\"id\":6,\"cor\":\"azul\"},{\"id\":7,\"cor\":\"roxa\"},{\"id\":8,\"cor\":\"marrom\"},{\"id\":9,\"cor\":\"preta\"}]";
+
         public FaixaController(FaixaContext context)
         {
             _context = context;
@@ -22,9 +22,10 @@ namespace ProcessesAPI.Controllers
 
         // GET: api/faixa
         [HttpGet]
-        public IEnumerable<Faixa> GetFaixas()
+        public IEnumerable<Dictionary<string, string>> GetFaixas()
         {
-            return _context.FaixaObject;
+            List<Dictionary<string, string>> obj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(Faixas);
+            return obj;//_context.FaixaObject;
         }
 
         // GET: api/faixa/5

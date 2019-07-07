@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jcleilton/Documents/Workspace/Backend/Projeto_Tenda_Cristo/ProcessesAPI/ProcessesAPI/ProcessesAPI.csproj": {}
+  },
+  "projects": {
+    "/Users/jcleilton/Documents/Workspace/Backend/Projeto_Tenda_Cristo/ProcessesAPI/ProcessesAPI/ProcessesAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jcleilton/Documents/Workspace/Backend/Projeto_Tenda_Cristo/ProcessesAPI/ProcessesAPI/ProcessesAPI.csproj",
+        "projectName": "ProcessesAPI",
+        "projectPath": "/Users/jcleilton/Documents/Workspace/Backend/Projeto_Tenda_Cristo/ProcessesAPI/ProcessesAPI/ProcessesAPI.csproj",
+        "packagesPath": "/Users/jcleilton/.nuget/packages/",
+        "outputPath": "/Users/jcleilton/Documents/Workspace/Backend/Projeto_Tenda_Cristo/ProcessesAPI/ProcessesAPI/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jcleilton/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

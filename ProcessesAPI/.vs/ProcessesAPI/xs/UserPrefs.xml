@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{BA6B5FC2-9B03-4180-B29C-56686340F693}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dataJson/categoriaobject.json">
+    <Files>
+      <File FileName="Controllers/CategoriaController.cs" Line="24" Column="54" />
+      <File FileName="Controllers/CompetidorController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/EquipeController.cs" />
+      <File FileName="Controllers/EventoController.cs" />
+      <File FileName="Controllers/FaixaController.cs" />
+      <File FileName="dataJson/categoriaobject.json" Line="162625" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProcessesAPI" expanded="True">
+            <Node name="ProcessesAPI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="dataJson" expanded="True">
+                <Node name="categoriaobject.json" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ProcessesAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
